@@ -10,7 +10,6 @@ This program contains a function that removes leading spaces and tabs in a line 
 #include <iostream>
 #include <string>
 #include <cctype>
-#include <vector>
 #include "unindent.h"
 
 //This function takes one line of code as input and returns its copy without leading spaces and tabs
