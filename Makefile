@@ -1,16 +1,12 @@
-main: main.o unindent.o
-	g++ -o main main.o unindent.o
-
-tests: tests.o unindent.o
-	g++ -o tests tests.o unindent.o
+main: main.o unindent.o indent.o
+	g++ -o main main.o unindent.o indent.o
 
 
 unindent.o: unindent.cpp unindent.h
 
-main.o: main.cpp unindent.h
+indent.o: indent.cpp indent.h
 
-tests.o: tests.cpp doctest.h unindent.h
-	g++ -c -std=c++11 tests.cpp
+main.o: main.cpp unindent.h indent.h
 
 clean:
-	rm -f main.o unindent.o tests.o
+	rm -f main.o unindent.o indent.o
