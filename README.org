@@ -6,7 +6,7 @@
 
 * GitHub username: ashlee-tolentino
 
-* Notes:
+* Notes: The removeLeadingSpaces, countChar, and indent functions can be tested in main.cpp. The unindent function is written in unindent.cpp while the indent function is written in indent.cpp.
 
 
   
