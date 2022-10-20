@@ -5,3 +5,4 @@
 #pragma once
 
 std::string removeLeadingSpaces(std::string);
+void unindent();
