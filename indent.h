@@ -5,3 +5,4 @@
 #pragma once
 
 int countChar(std::string, char);
+void indent();
