@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: Michael Zamansky
 Assignment: Lab7
 
-This program contains a function that removes leading spaces and tabs in a line of code.
+This program contains one function that removes leading spaces and tabs in a line of code and another function that unindents source code files.
 */
 
 #include <iostream>
@@ -29,7 +29,8 @@ std::string removeLeadingSpaces(std::string line)
   return result;
 }
 
-int main()
+
+void unindent()
 {
   std::string lines;
 
@@ -39,6 +40,5 @@ int main()
     std::string result = removeLeadingSpaces(lines);
     std::cout << result << std::endl;
   }
-  
-  return 0;
 }
+
