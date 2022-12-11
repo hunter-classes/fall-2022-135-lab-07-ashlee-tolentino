@@ -5,6 +5,7 @@ Instructor: Michael Zamansky
 Assignment: Lab7
 
 This program unindents and correctly indents source code files.
+This lab is used for Pull Request Lab.
 */
 
 #include <iostream>
