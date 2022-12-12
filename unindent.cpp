@@ -12,14 +12,14 @@ This program contains one function that removes leading spaces and tabs in a lin
 #include <cctype>
 #include "unindent.h"
 
-//This function takes one line of code as input and returns its copy without leading spaces and tabs
+//This function takes one line of code as input and returns its copy without leading spaces and tabs and asterisks
 std::string removeLeadingSpaces(std::string line)
 {
   std::string result = "";
   for(int i = 0; i < line.length(); i++)
   {
     char c = line[i];
-    if(!(isspace(c)))
+    if(!(isspace(c)) && (c!='*'))
     {
       result += line.substr(i);
       break;
